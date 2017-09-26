@@ -11,10 +11,11 @@ console.log(initialState);
 //b/c redux does not allow to return undefined
 const ActiveBook = (state = null, action) => {
   switch (action.type) {
-    case "BOOK_SELECTED":
+    case "SELECT_BOOK":
       return action.payload;
+    default:
+      return state;
   }
-  return state;
 };
 
 // can never return a mutated state in reducers..must be fresh state or original

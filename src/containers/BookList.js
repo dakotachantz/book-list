@@ -18,17 +18,6 @@ class BookList extends Component {
       );
     });
 
-    //must create a map function here to return the following:
-
-    // ******************
-    //
-    //     <li
-    //       key={book.id}
-    //       onClick={() => this.props.selectBook(book)}
-    //       className="list-group-item">{book.title}</li>
-    //
-    // ******************
-
     return (
       <ul className="list-group col-sm-4">
         {/* return your mapped array list items here */}
